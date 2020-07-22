@@ -15,31 +15,4 @@
  * limitations under the License.
  */
 
-export interface FeaturesConfig {
-    readOnly?: boolean
-}
-
-export interface ArtifactsConfig {
-    url: string;
-    type: string;
-}
-
-export interface UiConfig {
-    url: string;
-    contextPath: string;
-}
-
-export interface AuthConfig {
-    url: string;
-    realm: string;
-    clientId?: string;
-    onLoad: string;
-}
-
-export interface ConfigType {
-    mode: string;
-    artifacts: ArtifactsConfig;
-    auth?: AuthConfig;
-    features?: FeaturesConfig;
-    ui: UiConfig;
-}
+export * from "./auth.service";
